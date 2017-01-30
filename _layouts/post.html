@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<!--<h4>blog</h4>-->
+<!--{% for post in site.posts %}-->
+<!--<time>{{ post.date | date: "%b %-d, %Y" }}</time>-->
+<!--<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>-->
+<!--{% endfor %}-->
+
+<!--<p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
+<div class="container">
+    <div class="col-md-9 col-content">
+        <div id="post-content" class="panel panel-pithy post">
+            <div class="panel-heading">
+                <h3 class="title">
+                    <i class="fa fa-bookmark-o"></i>{{page.title}}
+                </h3>
+                <ul class="info">
+                    <li>Author：<span class="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author.full_name }}{% endif %}</span></li>
+                    <li>Last Edited：{{ page.date | date: "%m-%d-%Y" }}</li>
+                    <li>Tags：
+                        {% for tag in page.tags %}
+                        <a class="tag" href="{{site.baseurl}}/tag/#{{ tag }}">{{ tag }}</a>
+                        {% endfor %}
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-body content">
+                {{content}}
+            </div>
+            {% include share.html%}
+        </div>
+        {% include comment.html%}
+    </div>
+    <div class="col-md-3 col-sidebar">
+        {% include author.html%}
+        {% include categories.html%}
+        {% include tags.html%}
+    </div>
+</div>

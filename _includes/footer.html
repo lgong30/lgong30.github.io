@@ -1,0 +1,37 @@
+<div class="container">
+
+<!--     <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/long.gong.1253"><i class="fa fa-facebook"></i></a>
+                <a href="https://scholar.google.com/citations?user=qtAikfAAAAAJ&hl=en"><i class="fa fa-google"></i></a>
+                <a href="https://www.linkedin.com/in/long-gong-14292859"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/{{ site.github_usrname }}"><i class="fa fa-github"></i></a>
+            </div> -->
+
+        <footer>
+               <hr style="margin-bottom: 2px">
+               <p>Pages of this site were copied or modified from existing templates (
+                   {% for ref in site.references %}{% if forloop.first == false %}, {% endif %}<a href="{% if ref.page == "home" %}{{ site.baseurl }}{% else %}{{ ref.page | prepend: site.baseurl }}{% endif %}">{{ ref.page }}</a> <== <a href="{{ ref.url }}">{{ ref.name }}</a>{% endfor %}).
+                   If you like them, please give credit to the original authors. Thanks.
+               </p>
+        </footer>
+        <!--</div>-->
+    <!--</div>-->
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="{{ "/js/jquery.js" | prepend: site.baseurl }}"></script>
+
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+<!-- custom js -->
+{% for script in page.scripts %}
+<script type="text/javascript" src="{{'/js/' | append: script | prepend: site.baseurl }}"></script>
+{% endfor %}
+<script src="{{ "/js/nav.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/sidebar.js" | prepend: site.baseurl }}"></script>
