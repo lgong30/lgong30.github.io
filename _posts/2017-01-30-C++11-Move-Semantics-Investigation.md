@@ -49,7 +49,6 @@ public:
         std::cout << "Move constructor is called" << std::endl;
         size = other.size;
         x = other.x;
-        // for (int i = 0;i < size;++ i) x[i] *= 3;
         other.size = 0;
         other.x = NULL;        
     }
@@ -107,7 +106,7 @@ int main()
 ```
 
 Before "witnessing the miracle", let us first do some simple analysis to figure out what the "miracle" is. According to the above use cases, we first create an exampleA object -- __i.e.,__ `a` -- from an `std::vector`. Then we passed `a` to the function `passbyValue` by value, since `a` is a `lvalue`, we would expect the **copy constructor** to be called. And then, we passed a `rvalue` `createObject()` 
-to the function `passbyValue`, we would expect the move constructor to be called. 
+to the function `passbyValue`, we would expect the **move constructor** to be called. 
 
 However, the following presents the output from running the above example (by using `g++ -std=c++11 example.cpp -o example && ./example`)
 
@@ -130,7 +129,7 @@ Unfortunately, we failed to witness the most important part of the miracle, __i.
 Dig Out of The Chief Culprit
 ----------------------------
 
-After Google, Google, and Google again, I eventually found "the chief culprit". It is the [**copy elision** feature of the compiler](https://en.wikipedia.org/wiki/Copy_elision). Now, it is really the moment to witness the miracle. The following gets the final outputs after disabling the **copy elision** (add a flag `-fno-elide-constructors`, that is to run `g++ -fno-elide-constructors -std=c++11 example.cpp -o example && ./example`).
+After Google, Google, ... and Google again, I eventually found "the chief culprit". It is the [**copy elision** feature of the compiler](https://en.wikipedia.org/wiki/Copy_elision). Now, it is really the moment to witness the miracle. The following gives the final outputs after disabling the **copy elision** (add a flag `-fno-elide-constructors`, that is to run `g++ -fno-elide-constructors -std=c++11 example.cpp -o example && ./example`).
 
 ```shell
 Create exampleA object from vector
