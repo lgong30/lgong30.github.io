@@ -58,6 +58,9 @@
     ul {
       list-style-type: square;
     }
+    ul li {
+      margin: inherit;
+    }
   }
 
   .operate{
