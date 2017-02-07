@@ -23,11 +23,8 @@ Configuration
 
 + Manually (Semi-manually) install [Package Control](https://packagecontrol.io/installation) (Note that, Package Control is the only package that you need install manually. It seems that the latest version of ST3, you can also install this package like other packages.)
 
-``ctrl + ` `` (``command + ` `` if you use Mac) to open the console, and copy the following codes into the console and then press `enter`.
+  - ``ctrl + ` `` (``command + ` `` if you use Mac) to open the console, and copy [the corresponding codes](https://packagecontrol.io/installation) into the console and then press `enter`.
 
-```shell
-import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
-```
 
 + Install package LatexTools
 
@@ -44,17 +41,19 @@ import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d
     ![ ](https://lgong30/github.io/assets/img/for_posts/STLaTeX/latextools_pop_2.png)
   - Replace the content with [this one](https://gist.github.com/xlong88/71837d9626bba76b84a09f8629796c2e)
 
-To use the above customized configuration, you need the following tools (note that, for the latest version of Ubuntu, all tools are built-in in the OS.)
+**Remark:** To use the above customized configuration, you need the following tools (note that, for the latest version of Ubuntu, all tools are built-in in the OS.)
 
 + Ghostscript
   - [Windows](http://www.ghostscript.com/download/gsdnld.html)
   - Mac: `brew install ghostscript`
 + PDF Viewer
-  - [Windows](http://www.sumatrapdfreader.org/dl/SumatraPDF-3.1.2-64-install.exe)
-  - [Mac](http://skim-app.sourceforge.net/)
+  - Windows: [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader.html)
+  - Mac: [Skim](http://skim-app.sourceforge.net/)
 
 Usage
 =====
+
+Please refer to [LateXTools for Cross Reference in Multi-file LaTeX Projects]({{ site.baseurl }}{% link _post/2016-06-12-Efficient-Usage-of-LaTeXTools.md %})
 
 
 
