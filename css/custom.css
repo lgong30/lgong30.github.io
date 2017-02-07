@@ -228,30 +228,3 @@ p {
     margin-top: -100px;
 }
 
-/* ul & ol: copy from https://kaspars.net/blog/web-development/how-to-create-beautiful-and-elegant-html-lists-using-css */
-ul, ol {
-   margin:auto -3em 1em 0;
-   padding:0;
-   position:relative;
-   left:-3em;
-   overflow:hidden;
-}
-
-li {
-   margin-top:0.25em;
-   margin-bottom:0.25em;
-}
-
-ul ul, ul ol,
-ol ol, ol ul {
-   margin-left:1em;
-   padding-left:0;
-}
-
-ul li, ol li {
-   margin-left:5em;
-}
-
-li li {
-   margin-left:1em;
-}
