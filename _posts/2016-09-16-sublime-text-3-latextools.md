@@ -31,14 +31,14 @@ Configuration
   - `ctrl + shift + p` (`command + shift + p` if you use Mac) to open the command Platte for Package Control 
   - Find and click "Package Control: Install Package"
   - Enter "LaTexTools" to search and click on the "LaTexTools" to install  
-    ![ ](https://lgong30/github.io/assets/img/for_posts/STLaTeX/latextools_install.png)
+    ![ ](https://lgong30.github.io/assets/img/for_posts/STLaTeX/latextools_install.png)
 
 + Configuration (optional only if you want to use the customized build script)
 
   - Open the configuration for LaTeXTools and "OK" for all pop-up windows.
-    ![ ](https://lgong30/github.io/assets/img/for_posts/STLaTeX/latextools_conf.png)
-    ![ ](https://lgong30/github.io/assets/img/for_posts/STLaTeX/latextools_pop_1.png)
-    ![ ](https://lgong30/github.io/assets/img/for_posts/STLaTeX/latextools_pop_2.png)
+    ![ ](https://lgong30.github.io/assets/img/for_posts/STLaTeX/latextools_conf.png)
+    ![ ](https://lgong30.github.io/assets/img/for_posts/STLaTeX/latextools_pop_1.png)
+    ![ ](https://lgong30.github.io/assets/img/for_posts/STLaTeX/latextools_pop_2.png)
   - Replace the content with [this one](https://gist.github.com/xlong88/71837d9626bba76b84a09f8629796c2e)
 
 **Remark:** To use the above customized configuration, you need the following tools (note that, for the latest version of Ubuntu, all tools are built-in in the OS.)
@@ -52,6 +52,8 @@ Configuration
 
 Usage
 =====
+
+Please refer to [LateXTools for Cross Reference in Multi-file LaTeX Projects](https://lgong30.github.io/skill/2016/06/12/Efficient-Usage-of-LaTeXTools.html)
 
 
 
