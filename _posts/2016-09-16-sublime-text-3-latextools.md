@@ -53,7 +53,7 @@ Configuration
 Usage
 =====
 
-Please refer to [LateXTools for Cross Reference in Multi-file LaTeX Projects]({{ site.baseurl }}{% link _post/2016-06-12-Efficient-Usage-of-LaTeXTools.md %})
+
 
 
 
