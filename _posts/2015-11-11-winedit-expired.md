@@ -60,7 +60,9 @@ Notice
 ------
 
 Note that, we do not recommend you to use this solution. If you really 
-cannot afford the registration, then [Sublime Text](https://www.sublimetext.com/) together with [LaTeXTools](https://github.com/SublimeText/LaTeXTools) would be a good conditionally free substitute.
+cannot afford the registration, then [Sublime Text](https://www.sublimetext.com/) together with [LaTeXTools](https://github.com/SublimeText/LaTeXTools) would be a good conditionally free substitute. Tis 
+installation and configuration of Sublime Text with LaTeXTools can be 
+found in [Play LaTeX Projects with Sublime Text 3](https://lgong30.github.io/skill/2016/09/16/sublime-text-3-latextools.html).
 
 
   
