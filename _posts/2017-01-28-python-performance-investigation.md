@@ -66,7 +66,7 @@ This solution first shifts all the removals to the end of the list, and then rem
 Which One Will Be More Efficient?
 ---------------------------------
 
-+ Dense Cases (`myList` has $$10^6$$ elements, removing $$80\%$$)
++ Dense Cases (`myList` has $10^6$ elements, removing $80\%$)
   + Random locations
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 159.12ms
@@ -99,7 +99,7 @@ Which One Will Be More Efficient?
     > 
     > Solution C: 121.12ms
 
-+ Sparse Cases (`myList` has $$10^6$$ elements, removing $$0.2\%$$)
++ Sparse Cases (`myList` has $10^6$ elements, removing $0.2\%$)
   + Random locations
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 134.81ms
