@@ -70,8 +70,11 @@ Which One Will Be More Efficient?
   + Random locations
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 159.12ms
+    > 
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 134.69ms
+    > 
     > Solution B: 1.13ms
+    > 
     > Solution C: 132.39ms
 
     **Remarks:** during the measurements, I found that the `set` create from different status (_e.g.,_ sorted or unsorted) of a `list` will have different efficiency. I will investigate this in details in future.
@@ -79,37 +82,52 @@ Which One Will Be More Efficient?
   + From the beginning
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 187.58ms
+    > 
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 133.30s
+    > 
     > Solution B: 7403.70ms
+    > 
     > Solution C: 221.80ms
 
   + From the ending
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 133.34ms
+    > 
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 142.03s
+    > 
     > Solution B: 0.74ms
+    > 
     > Solution C: 121.12ms
 
 + Sparse Cases (`myList` has $$10^6$$ elements, removing $$0.2\%$$)
   + Random locations
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 134.81ms
+    >
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 149.77ms
+    >
     > Solution B: 216.96ms
+    >
     > Solution C: 159.68ms
 
   + From the beginning
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 150.39ms
+    >
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 153.45ms
+    >
     > Solution B: 2098.12ms
+    >
     > Solution C: 182.74ms
 
   + From the ending
 
     > Solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 131.15ms
+    >
     > Solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 134.47s
+    >
     > Solution B: 204.69ms
+    >
     > Solution C: 163.19ms
 
 
