@@ -1,13 +1,13 @@
 ---
 layout: post
-title: C++ 11 Move Semantics Investigation
+title: Play with C++ 11 Move Semantics
 tags: [C++]
 categories: [skill]
 ---
 
 
 Recently, I have learned about the move semantics of C++ 11 from [Bo Qian's YouTuBe Channel](https://www.youtube.com/watch?v=IOkgBrXCtfo). 
-As an "old body" that is curious to all kinds of new techniques, I definitely would give myself a try. 
+As an "old boy" that is curious to all kinds of new techniques, I definitely would give myself a try. 
 
 Define a Class
 --------------
