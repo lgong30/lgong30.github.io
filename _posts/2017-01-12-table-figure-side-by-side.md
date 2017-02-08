@@ -8,16 +8,16 @@ excerpt: "Simple ways to place tables and figures side by side in Latex"
 ---
 
 
-While write a paper (or a propsoal), you might need to place a table and a figure in a same row to save some space (or
+While write a paper (or a proposal), you might need to place a table and a figure in a same row to save some space (or
 for some other reasons). In this post, I will provide two simple approaches. The first one is based on [`floatrow`](http://ctan.mackichan.com/macros/latex/contrib/floatrow/floatrow.pdf).
  The second one is based on [`minipage`](https://en.wikibooks.org/wiki/LaTeX/Boxes#minipage_and_parbox) and [`caption`](http://mirror.unl.edu/ctan/macros/latex/contrib/caption/caption-eng.pdf).
 
 
-----------
 
 
-floatrow Based Solution
----
+
+`floatrow` Based Solution
+=========================
 
 ```TeX
 \begin{figure}\CenterFloatBoxes
@@ -39,12 +39,10 @@ you want your mixed results occupy both of the columns.
 + If you have used `float` package, you can not use this solution. Because they are incompitable.
 
 
-----------
 
 
-
-minipage Based Solution
----
+`minipage` Based Solution
+=========================
 
 ```TeX
 \begin{figure}
@@ -63,5 +61,9 @@ table puts here
 \end{figure}
 ```
 
+Notice
+------
+
+If you have better solution, welcome to share with us.
 
 

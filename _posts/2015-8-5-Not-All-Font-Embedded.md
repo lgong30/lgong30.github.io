@@ -1,22 +1,18 @@
 ---
 layout: post
 title: Solve “Not All Fonts are Embedded” for Latex on Windows
-excerpt: "Solution to Not All Fonts are Embedded for Latex."
 tags: [latex]
 categories: [skill]
 ---
 
-When uploading papers to EDAS, you might encounter a problem which is called as “Not All Fonts are Embedded”. Today, I'll give you a relatively easy and convenient solution.
+When uploading papers to EDAS (or other paper submission site), you might encounter a problem which is called as “Not All Fonts are Embedded”. Today, I'll give you a relatively easy and convenient solution for Windows (for other OSes, solutions are similar).
 
-## Tools
 
-[GS x86 for 32-bit Windows](http://pan.baidu.com/s/1hq701wC) 
 
-[GS x64 for 64-bit Windows](http://pan.baidu.com/s/1pJDXLVl)
+Steps
+=====
 
-## Steps
-
-### Download and Install The Proper GS (_i.e._, GS x86 or GS x64)
+### Download and Install The Proper [Ghostscript](https://ghostscript.com/download/gsdnld.html)
 
 **Note that**, in the following steps, I will assume the GS is installed at "C:/Program Files/gs"!
 

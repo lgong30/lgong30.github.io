@@ -5,303 +5,125 @@ tags: [python]
 categories: [skill]
 ---
 
-
-Splicing vs While Loop
-----------------------
+In this post, we investigate how to efficiently delete certain elements from a Python list. More specifically, you want to delete certain elements, whose indices are given.
 
 
-```python
-import timeit
-
-
-setup = '''
-from copy import deepcopy
-n = 10000
-x = range(n)
-y = range(20,2001)
-'''
-
-test_group = 1
-test_num = 10000
-
-
-
-s = '''
-i = 20
-while i < 2000:
-    y[i - 20] = x[i]
-    i += 1
-'''
-
-print "splicing: ", timeit.Timer('[z for z in x[20:2000]]', setup=setup).repeat(test_group, test_num)[0]
-print "xrange: ", timeit.Timer('[x[i] for i in xrange(20,2001)]', setup=setup).repeat(test_group, test_num)[0]
-print "while loop: ", timeit.Timer(s, setup=setup).repeat(test_group, test_num)[0]
-```
-
-
-
-
-Measurement results:
-
-```shell
-splicing:  0.950579881668
-xrange:  1.10384917259
-while loop:  2.56404590607
-```
-
-
-Delete from List
-----------------
-
-
-### Single Remove
-
+Solution A: Move to A New List
+------------------------------
 
 ```python
-import timeit
-
-
-setup = '''
-n = 10000
-x = range(n)
-y = range(20,2001)
-'''
-
-test_group = 1
-test_num = 10000
-print "removing first element: ", timeit.Timer('del x[0]', setup=setup).repeat(test_group, test_num)[0]
-print "removing the last element: ", timeit.Timer('del x[-1]', setup=setup).repeat(test_group, test_num)[0]
-```
-
-
-Measurement results:
-
-```shell
-removing first element:  0.0151288509369
-removing the last element:  0.000619888305664
-```
-
-
-### Multiple Remove
-
-```python
-"""This script compares the performance of three different
-methods to remove certain elements from a list. Note that
-the removal indices are sorted in ascending order.
-"""
-
-
-def remove_with_move(myList, removalIndices):
-    """Remove without inplace
-
-    This method removes the elements in myList with
-    indices specified by removalIndices by creating
-    a new list for all non-removal elements
-
-    :param myList: input list
-    :param removalIndices: indices of removals (in ascending order)
-    :return: list after removing
-    """
+def removeA(myList, removalIndices):
     if not isinstance(removalIndices, set):
         removalIndices = set(removalIndices)
     return [v for i, v in enumerate(myList) if not (i in removalIndices)]
+```
+
+This solution moves elements that do not need remove to a new list. Clearly, it would not be quite efficient when the number of removals is much less than the length of the original list. Besides, if the indices of the removals are not stored in a `set` but a `list`, the conversion from `list` to `set` would further drop the efficiency.
 
 
-def remove(myList, removalIndices, inplace=False):
-    """Remove w/o inplace
+Solution B: Remove From The Last
+--------------------------------
 
-    This method removes certain elements in myList
-    one-by-one from the largest index to the
-    smallest one. Note that, usually this will not be
-    an efficient way, since it might have a complexity
-    close to kN, where k is the number of removals and
-    N is the length of myList.
+```python
+def removeB(myList, removalIndices):
+    for removalIndex in removalIndices[::-1]:
+        del myList[removalIndex]
+    return myList
+```
 
-    see :fun remove_with_move
-    """
-    if not inplace:
-        return remove_with_move(myList, removalIndices)
-    else:
-        for removalIndex in removalIndices[::-1]:
-            del myList[removalIndex]
-        return myList
+This solution removes the elements from the last (the one with the largest index) to the first (the one with the smallest index). This solution assumes that the indices of removals are sorted in an ascending order. Note that, removing from the first one is not a good idea, since each removal will change the indices of the remaining removals. In other words, for removals other than the first one, you have to recalculate the index before removing.
 
 
-def efficient_remove(myList, removalIndices, inplace=False):
-    """Efficient removal method w/o inplace
+Solution C: Shift Removals Together Then Remove
+-----------------------------------------------
 
-    This method removes certain elements from myList
-    by efficiently shift the non-removals. Note that,
-    this method guarantees a O(N) complexity.
+```python
+def removeC(myList, removalIndices):
+    nextRemovalIndex = removalIndices[0]
+    indexOfRemovalIndices = 1
 
-    see :fun remove
-    """
-    if not inplace:
-        return remove_with_move(myList, removalIndices)
-    else:
-        nextRemovalIndex = removalIndices[0]
-        indexOfRemovalIndices = 1
+    numOfRemovals = len(removalIndices)
+    lenOfList = len(myList)
 
-        numOfRemovals = len(removalIndices)
-        lenOfList = len(myList)
-
-        currentIndex = nextRemovalIndex + 1
-        while currentIndex < lenOfList:
-            nextIndex = removalIndices[indexOfRemovalIndices] if indexOfRemovalIndices < numOfRemovals else lenOfList
-            while currentIndex < nextIndex:
-                myList[nextRemovalIndex] = myList[currentIndex]
-                nextRemovalIndex += 1
-                currentIndex += 1
-            indexOfRemovalIndices += 1
+    currentIndex = nextRemovalIndex + 1
+    while currentIndex < lenOfList:
+        nextIndex = removalIndices[indexOfRemovalIndices] if indexOfRemovalIndices < numOfRemovals else lenOfList
+        while currentIndex < nextIndex:
+            myList[nextRemovalIndex] = myList[currentIndex]
+            nextRemovalIndex += 1
             currentIndex += 1
-        # pay attention
-        myList[-numOfRemovals:] = []
+        indexOfRemovalIndices += 1
+        currentIndex += 1
+    # pay attention
+    myList[-numOfRemovals:] = []
 
-        return myList
-
-
-
-if __name__ == "__main__":
-    test_num = 1000
-    N = 10000
-    import numpy as np
-    from copy import deepcopy
-
-    myList = range(N)
-    K = np.random.randint(1, high=int(0.05 * N))
-    removalIndices = np.random.permutation(N).tolist()[::K]
-    removalIndices = sorted(removalIndices)
-
-    import time
-
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListA = deepcopy(myList)
-        removalIndicesA = deepcopy(removalIndices)
-        s = time.time()
-        remove_with_move(myList=myListA, removalIndices=removalIndicesA)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove_with_move", t)
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListB = deepcopy(myList)
-        removalIndicesB = deepcopy(removalIndices)
-        s = time.time()
-        remove(myList=myListB, removalIndices=removalIndicesB, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove", t)
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListC = deepcopy(myList)
-        removalIndicesC = deepcopy(removalIndices)
-        s = time.time()
-        efficient_remove(myList=myListC, removalIndices=removalIndicesC, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("efficient_remove", t)
-
-
-
-
-    K = np.random.randint(int(0.7 * N), high=int(0.95 * N))
-    test_num = 400
-    removalIndices = np.random.permutation(N).tolist()[::K]
-    removalIndices = sorted(removalIndices)
-
-    import time
-
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListA = deepcopy(myList)
-        removalIndicesA = deepcopy(removalIndices)
-        s = time.time()
-        remove_with_move(myList=myListA, removalIndices=removalIndicesA)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove_with_move", t)
-
-    t = 0
-    for test_id in range(test_num):
-        myListA = deepcopy(myList)
-        removalIndicesA = set(deepcopy(removalIndices))
-        s = time.time()
-        remove_with_move(myList=myListA, removalIndices=removalIndicesA)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove_with_move with set input", t)
-
-    t = 0
-    for test_id in range(test_num):
-        myListB = deepcopy(myList)
-        removalIndicesB = deepcopy(removalIndices)
-        s = time.time()
-        remove(myList=myListB, removalIndices=removalIndicesB, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove", t)
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListC = deepcopy(myList)
-        removalIndicesC = deepcopy(removalIndices)
-        s = time.time()
-        efficient_remove(myList=myListC, removalIndices=removalIndicesC, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("efficient_remove", t)
-
-
-    removalIndices = range(2000)
-
-    import time
-
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListA = deepcopy(myList)
-        removalIndicesA = deepcopy(removalIndices)
-        s = time.time()
-        remove_with_move(myList=myListA, removalIndices=removalIndicesA)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove_with_move", t)
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListB = deepcopy(myList)
-        removalIndicesB = deepcopy(removalIndices)
-        s = time.time()
-        remove(myList=myListB, removalIndices=removalIndicesB, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("remove", t)
-
-
-    t = 0
-    for test_id in range(test_num):
-        myListC = deepcopy(myList)
-        removalIndicesC = deepcopy(removalIndices)
-        s = time.time()
-        efficient_remove(myList=myListC, removalIndices=removalIndicesC, inplace=True)
-        t += time.time() - s
-    print "%s: %.3f" % ("efficient_remove", t)
+    return myList
 ```
 
-Measurement results:
+This solution first shifts all the removals to the end of the list, and then removes them. Note that, this solution also assumes the indices of removals are sorted in an ascending order. Compare to **Solution B**, it guarantees that every element that needs move just moves once.
 
-```shell
-remove_with_move: 1.273
-remove: 0.111
-efficient_remove: 1.765
-remove_with_move: 0.447
-remove_with_move with set input: 0.547
-remove: 0.004
-efficient_remove: 0.212
-remove_with_move: 0.509
-remove: 2.481
-efficient_remove: 0.739
-```
+
+Which One Will Be More Efficient?
+---------------------------------
+
++ Dense Cases (`myList` has $$10^6$$ elements, removing $$80\%$$)
+  + Random locations
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 159.12ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 134.69ms
+      Solution B: 1.13ms
+      Solution C: 132.39ms
+
+    **Remarks:** during the measurements, I found that the `set` create from different status (_e.g.,_ sorted or unsorted) of a `list` will have different efficiency. I will investigate this in details in future.
+
+  + From the beginning
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 187.58ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 133.30s
+      Solution B: 7403.70ms
+      Solution C: 221.80ms
+
+  + From the ending
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 133.34ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 142.03s
+      Solution B: 0.74ms
+      Solution C: 121.12ms
+
++ Sparse Cases (`myList` has $$10^6$$ elements, removing $$0.2\%$$)
+  + Random locations
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 134.81ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 149.77ms
+      Solution B: 216.96ms
+      Solution C: 159.68ms
+
+  + From the beginning
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 150.39ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 153.45ms
+      Solution B: 2098.12ms
+      Solution C: 182.74ms
+
+  + From the ending
+
+    > solution A (with `list` representing removals, _i.e.,_ `removalIndices` is a `list`): 131.15ms
+      solution A (with `set` representing removals, _i.e.,_ `removalIndices` is a `set`): 134.47s
+      Solution B: 204.69ms
+      Solution C: 163.19ms
+
+
+
+
+
+
+
+
+
+
+
+TODO
+====
+
+1. efficiency of set creating from different status of a list
+2. while loop versus splicing

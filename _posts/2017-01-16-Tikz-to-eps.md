@@ -1,13 +1,16 @@
 ---
 layout: post
-title: Tikz to EPS
+title: TikZ to eps
 categories: [skill]
 tags: [latex]
 ---
 
+TiKz provides a very efficient way for us to "program" our figures. However, sometimes you might only want to share your figures but not the source codes of your figures with other for some reasons (_e.g.,_ the source code uses a large amount of TiKzlibrary, other people might not have these libraries in the machine or you just want to make your codes private). In this post, we present a way to generate eps figure from TikZ source code (Of course, you can also generate a PDF and let others include that PDF).
+
+
 
 LaTeX Code
----
+----------
 
 ```TeX
 \documentclass{article}
@@ -33,7 +36,7 @@ ps2eps "\image.ps"}}
 ```
 
 Usage
----
+-----
 
 
 ```shell
