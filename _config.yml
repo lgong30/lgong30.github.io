@@ -23,7 +23,7 @@ email: gonglong.gatech@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   First play with Jekyll.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lgong30.github.io"
+url: "https://lgong30.github.io/"
 # "http://localhost:8089" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lgong30
 github_username:  lgong30
@@ -65,6 +65,7 @@ author:
   full_name: Long Gong
   email: gonglong.gatech@gmail.com
   url: http://cc.gatech.edu/~lgong30
+  github: https://github.com/lgong30
 
 education:
   - edu3:
