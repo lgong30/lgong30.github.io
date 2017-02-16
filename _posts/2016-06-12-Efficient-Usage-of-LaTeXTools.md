@@ -5,7 +5,7 @@ tags: [LaTeXTools, sublime]
 categories: [skill]
 ---
 
-In this post, we will introduce a method to help you easily do cross reference in a multi-file latex project (__i.e.__, a latex project where latex source files are distributed into multiple files). For example, the file structure of a multi-file latex project might look like:
+In this post, we will introduce a method to help you easily do cross reference in a multi-file latex project (_i.e._, a latex project where latex source files are distributed into multiple files). For example, the file structure of a multi-file latex project might look like:
 
 ```shell
 path/to/your-latex-project/
