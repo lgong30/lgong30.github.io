@@ -20,5 +20,5 @@ tags: [DC networking]
     E: Couldn't find any package by glob 'libdb6.0-dev'
     E: Couldn't find any package by regex 'libdb6.0-dev'
     ```
- - cause: it seems there is no package `libdb6.0-dev` for Ubuntu 16.04 (I only found `libdb6.0-dev` for Ubuntu 14.04)
- - solution: replace `libdb6.0-dev` with `libdb-dev` (if you still see the similar error, then you might need add the [source](http://packages.ubuntu.com/xenial/amd64/libdb-dev/download) to your `/etc/apt/source/lsit` )
+  - cause: it seems there is no package `libdb6.0-dev` for Ubuntu 16.04 (I only found `libdb6.0-dev` for Ubuntu 14.04)
+  - solution: replace `libdb6.0-dev` with `libdb-dev` (if you still see the similar error, then you might need add the [source](http://packages.ubuntu.com/xenial/amd64/libdb-dev/download) to your `/etc/apt/source/lsit` )
