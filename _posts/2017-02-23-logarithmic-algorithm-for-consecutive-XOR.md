@@ -5,7 +5,7 @@ categories: [skill]
 tags: [algorithm]
 ---
 
-In this post, we will deal with the following XOR problem. Given $l$ consecutive nonnegative integers which start from $s$, _i.e.,_ $s, s+1, \cdots, s + l - 1$, you are asked to get the XOR of them, _i.e.,_ $XOR\limits_{x\in [s+l-1]\setminus [s-1]}x$, where $[s]=\{1,2,\cdots,s\}$. An algorithm with complexity $O(l\log (s + l))$ is straightforward: XOR these numbers one by one (see the following pseudo-code). 
+In this post, we will deal with the following XOR problem. Given $l$ consecutive nonnegative integers which start from $s$, _i.e.,_ $s, s+1, \cdots, s + l - 1$, you are asked to get the XOR of them, _i.e.,_ $XOR_{x\in [s+l-1]\setminus [s-1]}x$, where $[s]=\{1,2,\cdots,s\}$. An algorithm with complexity $O(l\log (s + l))$ is straightforward: XOR these numbers one by one (see the following pseudo-code). 
 
 ```python
 def XOR(s, l):
@@ -32,7 +32,7 @@ Of course, you need pay a little attention to the beginning and ending parts, si
 
 Generally, 
 + for the $k^{th}$ ($k>1$) bit you only need to count how many $1$'s are they in the first and last partial period (if applicable). Since there are always even number of $1$'s in a full period.
-+ for the first bit, clearly there are $\lfoor\frac{l - b}{2}\rfloor + b$
++ for the first bit, clearly there are $\lfloor\frac{l - b}{2}\rfloor + b$
 
 
 The following pseudo-code shows how to XOR the $i^{th}$ bit. Clearly, it can be done in $O(\log(s + l))$, as there are at most $\log (s + l)$ bits, therefore, this algorithm can calculate the XOR in $O(\log^2(s+l))$ time. Note that, before calculating the XOR bit-by-bit, you should first get these bits and after finishing the XOR, you should assemble these bits into a decimal number. Clearly, these two operations can be done in $O(\log(s+l))$.
