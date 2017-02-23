@@ -15,8 +15,6 @@ def XOR(s, l):
     return x
 ```
 
-Can we do better? 
-
 
 Logarithmic Solution
 --------------------
@@ -32,7 +30,7 @@ Of course, you need pay a little attention to the beginning and ending parts, si
 
 Generally, 
 + for the $k^{th}$ ($k>1$) bit you only need to count how many $1$'s are they in the first and last partial period (if applicable). Since there are always even number of $1$'s in a full period.
-+ for the first bit, clearly there are $\lfloor\frac{l - b}{2}\rfloor + b$
++ for the first bit, clearly $1$'s appear $\lfloor\frac{l - b}{2}\rfloor + b$ times
 
 
 The following pseudo-code shows how to XOR the $i^{th}$ bit. Clearly, it can be done in $O(\log(s + l))$, as there are at most $\log (s + l)$ bits, therefore, this algorithm can calculate the XOR in $O(\log^2(s+l))$ time. Note that, before calculating the XOR bit-by-bit, you should first get these bits and after finishing the XOR, you should assemble these bits into a decimal number. Clearly, these two operations can be done in $O(\log(s+l))$.
