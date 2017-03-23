@@ -5,6 +5,7 @@ permalink: /project/
 ---
 
 {% assign projKeys = "projects, gadgets" | split: ", " %}
+{% assign isProjectPage = true %}
 
 <div class="row">
     {% for pk in projKeys %}
