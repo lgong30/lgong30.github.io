@@ -99,7 +99,7 @@ education:
 news:
   - summary: Webpage Updated
     time: March 23, 2017
-    content: "1. Add news part to the index page of my website<br/>2. Update about page"
+    content: "1. Add news panel to the index page of my website<br/>2. Update about page"
   - summary: Paper Accepted
     time: March 22, 2017
     content: "Our paper <I>Queue-Proportional Sampling: A Better Approach to Crossbar Scheduling for Input-Queued Switches</I> was accepted by <a href=\"https://www.sigmetrics.org/sigmetrics2017/\">Sigmetrics 2017</a>"
