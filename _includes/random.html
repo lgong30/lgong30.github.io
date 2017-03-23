@@ -1,0 +1,27 @@
+<div class="chat-panel panel panel-default">
+    <div class="panel-heading">
+        <i class="fa fa-newspaper-o" aria-hidden="true"></i> News
+    </div>
+    <!-- /.panel-heading -->
+    <div class="panel-body">
+        <ul class="chat">
+        {% for n in site.news %}
+            <li class="left">
+                <div class="chat-body">
+                    <div class="header">
+                        <strong class="primary-font">{{ n.summary }}</strong>
+                        <small class="pull-right text-muted">
+                            <i class="fa fa-clock-o fa-fw"></i> {{ n.time }}
+                        </small>
+                    </div>
+                    <p>
+                        {{ n.content }}
+                    </p>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <!-- /.panel-body -->
+</div> 
+<!-- /.chat-panel -->
