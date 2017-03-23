@@ -1,4 +1,4 @@
-<B>Long Gong</B> is a CS PhD at <a href="https://gatech.edu">Georgia Institute of Technology</a>. His research interest focuses on {% for ri in site.research_interests %}{{ ri }}{% if forloop.last == false %}, {% endif %}{% endfor %} (<B>not limited to</B>). <br/>
+<B>Long Gong</B> is a CS PhD at <a href="https://gatech.edu">Georgia Institute of Technology</a>. His research interest focuses on {% for ri in site.research_interests %}{% if forloop.last == true %}, and {% endif %}{% endfor %}{{ ri }}{% if forloop.last == false %}, {% endif %}{% endfor %} (<B>not limited to</B>). <br/>
 
 Besides his research areas, he is also quite interested in building all kinds of practical tools (from tiny APPs to large systems). <br/>
 
