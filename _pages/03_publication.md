@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publication
-permalink: /publication/
+external-url: https://scholar.google.com/citations?user=qtAikfAAAAAJ&hl=en
 ---
 
 This page is still under construction
