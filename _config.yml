@@ -98,6 +98,9 @@ education:
 
 news:
   - summary: Webpage Updated
+    time: March 25, 2017
+    content: Update publication page
+  - summary: Webpage Updated
     time: March 23, 2017
     content: "1. Add news panel to the index page of my website<br/>2. Update about page<br/>3. Add recent projects"
   - summary: Paper Accepted
