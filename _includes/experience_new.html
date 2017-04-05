@@ -1,0 +1,19 @@
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+    
+    {% for exp in site.experiences %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{ exp.position }}</h3>
+                <div class="time">{{ exp.duration }}</div>
+            </div><!--//upper-row-->
+            <div class="company">{{ exp.institution }}</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>{{ exp.description }} </p>
+        </div><!--//details-->
+    </div><!--//item-->
+    {% endfor %}
+    
+</section><!--//section-->

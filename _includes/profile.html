@@ -1,0 +1,18 @@
+<div class="profile-container">
+    
+    <img src="{{ site.baseurl}}/assets/img/avatar.jpg" alt="{{ site.author.full_name }}" />
+    
+    <h1 class="name">{{ site.author.full_name }}</h1>
+    <h3 class="tagline">{{ site.author.role }}</h3>
+</div><!--//profile-container-->
+
+<div class="contact-container container-block">
+    <ul class="list-unstyled contact-list">
+        <li class="email"><i class="fa fa-envelope"></i><a href="mailto: {{ site.author.edu_email }}">{{ site.author.edu_email_display }}</a></li>
+        <!-- <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li> -->
+        <li class="website"><i class="fa fa-globe"></i><a href="{{ site.baseurl }}" target="_blank">{{ site.author.web }}</a></li>
+        <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">{{ site.author.linkedin }}</a></li>
+        <li class="github"><i class="fa fa-github"></i><a href="#" target="_blank">{{ site.author.github }}</a></li>
+        <!-- <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li> -->
+    </ul>
+</div><!--//contact-container-->

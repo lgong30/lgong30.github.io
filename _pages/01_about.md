@@ -1,8 +1,10 @@
 ---
-layout: about
+layout: new_about
 title: About
+me: about
 permalink: /about/
-styles: [resumecard.css]
+styles: [orbit.css]
+scripts: [orbit.js]
 ---
 
 

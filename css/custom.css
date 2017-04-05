@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif; 
     padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     /* font-family: 'Josefin Slab';*/
-    font-weight: 300;
+    font-weight: 500;
     font-size: 16px;
     color: #555;
 
@@ -44,6 +44,10 @@ p {
     background-color: #f2f2f2;
 }
 
+.foot {
+  padding: 30px;
+  padding-top: 60px;
+}
 
 #footer {
   background-color: #292c2f;

@@ -9,12 +9,17 @@
                 <a href="https://github.com/{{ site.github_usrname }}"><i class="fa fa-github"></i></a>
             </div> -->
 
-        <footer>
-               <hr style="margin-bottom: 2px">
-               <p>Pages of this site were copied or modified from existing templates (
-                   {% for ref in site.references %}{% if forloop.first == false %}, {% endif %}<a href="{% if ref.page == "home" %}{{ site.baseurl }}{% else %}{{ ref.page | prepend: site.baseurl }}{% endif %}">{{ ref.page }}</a> <== <a href="{{ ref.url }}">{{ ref.name }}</a>{% endfor %}).
-                   If you like them, please give credit to the original authors. Thanks.
-               </p>
+        <footer class="footer">
+               <div class="text-center">
+               {% if page.me == "about" %}
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+                {% elsif page.me == "home" %}
+                Modified from <a href="http://blacktie.co/2014/01/stanley-freelancer-theme/" target="_blank">stanley-freelancer-theme</a>
+                {% else %}
+                Modified from <a href="https://github.com/jaylinwang/jekyll-pithy/tree/gh-pages" target="_blank">Jekyll-pithy</a>
+                {% endif %}
+                </div><!--//container-->
         </footer>
         <!--</div>-->
     <!--</div>-->
