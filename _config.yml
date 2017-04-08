@@ -102,6 +102,9 @@ education:
     description: ""
 
 news:
+  - summary: Unmatched in Google's Host Matching
+    time: April 10, 2017
+    content: Unfortunately, Long failed to match with a team in the host matching stage for the internship position at Google. 
   - summary: Qualifying Exam Passed
     time: April 4, 2017
     content: Long passed his qualifying exam, becoming a PhD candidate
