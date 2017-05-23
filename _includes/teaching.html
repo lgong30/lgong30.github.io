@@ -2,14 +2,14 @@
     <h2 class="section-title"><i class="fa fa-book"></i>Teaching &amp; Professional Services</h2>
     {% if site.teaching %}
     <div class="item">
-        <span class="project-title">Teaching</span> - <span class="project-tagline">{% for t in site.teaching %}<a href="{{ t.url }}">{{ t.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>   
+        <span class="project-title">Teaching</span> - <span class="project-tagline">{% for t in site.teaching %}<a href="{{ t.url }}">{{ t.name }}</a>{% if forloop.last==false %}, {% endif %}{% endfor %}</span>   
     </div><!--//item-->
     {% endif %}
 
-    {% if site.services %}
+    {% if site.service %}
     <div class="item">  
         {% for s in site.service %}
-        <span class="project-title">{{ s.name }}</span> - <span class="project-tagline">{% for d in s.details %}<a href="{{ t.url }}">{{ d }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</span>   
+        <span class="project-title">{{ s.type }}</span> - <span class="project-tagline">{% for d in s.details %}{{ d }}{% if forloop.last==false %}, {% endif %}{% endfor %}</span>   
         {% endfor %}
     </div><!--//item-->
     {% endif %}
