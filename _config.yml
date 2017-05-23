@@ -182,16 +182,16 @@ projects:
 
 
 teaching:
-  - t1
+  - t1:
     name: CS7260 Design and Analysis of Network/Router Algorithms and Hardware
     url: http://www.cc.gatech.edu/classes/AY2017/cs7260_spring
 
 service:
-  - s1 
+  - s1: 
     type: reviewer
     detail: ["IEEE INFOCOM 2016"]
 
-    
+
 programmingSkills:
   - skill1:
     name: C/C++
