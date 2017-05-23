@@ -188,7 +188,7 @@ teaching:
 
 service:
   - s1: 
-    type: reviewer
+    type: Reviewer
     details: ["IEEE INFOCOM 2016"]
 
 
