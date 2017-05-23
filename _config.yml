@@ -102,6 +102,12 @@ education:
     description: ""
 
 news:
+  - summary: Student Travel Grant Award
+    time: May 23, 2017
+    content: Long got the Student Travel Grant Award for SIGMETRICS 2017
+  - summary: Paper Accepted
+    time: May 23, 2017
+    content: Our work on online social networking will appear in ICCCN 2017 as an invited paper
   - summary: Unmatched in Google's Host Matching
     time: April 10, 2017
     content: Unfortunately, Long failed to match with a team in the host matching stage for the internship position at Google. 
@@ -125,6 +131,12 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub3:
+    title: "Queue-Proportional Sampling: A Better Approach to Crossbar Scheduling for Input-Queued Switches"
+    authors: ["Long Gong", "Paul Tune", "Liang Liu", "Sen Yang", "Jun (Jim) Xu"]
+    conference: ACM SIGMETRICS 2017
+    url: https://www.sigmetrics.org/sigmetrics2017/schedule.html
+    type: conference
   - pub2:
     title: Impairment- and Splitting-Aware Cloud-Ready Multicast Provisioning in Elastic Optical Networks
     authors: ["Zuqing Zhu", "Xiahe Liu", "Yixiang Wang", "Wei Lu", "Long Gong", "Shui Yu", "Nirwan Ansari"]
@@ -168,6 +180,18 @@ projects:
     name: ForestStream
     description: A hybrid graph streaming-sampling algorithm to measure the statistic properties of online social networking (OSN) cascades with high accuracy by using limited amount of memory
 
+
+teaching:
+  - t1
+    name: CS7260 Design and Analysis of Network/Router Algorithms and Hardware
+    url: http://www.cc.gatech.edu/classes/AY2017/cs7260_spring
+
+service:
+  - s1 
+    type: reviewer
+    detail: ["IEEE INFOCOM 2016"]
+
+    
 programmingSkills:
   - skill1:
     name: C/C++

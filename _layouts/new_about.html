@@ -23,6 +23,10 @@ layout: default
         
     {% include project_short.html %}
 
+    {% if site.teaching or site.service %}
+        {% include teaching.html %}
+    {% endif %}
+
     {% include publication_new.html %}
         
     {% include skill_new.html %}
