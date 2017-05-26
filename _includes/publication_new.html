@@ -14,10 +14,11 @@
                         {% endif %}
                     </div>
                     <div class="paper-source">
-                        <i class="fa fa-book"></i>
                         {% if pubinfo.type == "journal" %}
+                            <i class="fa fa-book"></i>
                             {{ pubinfo.journal }}
                         {% else %}
+                            <i class="fa fa-users"></i>
                             {{ pubinfo.conference }}
                         {% endif %} |
                         {% if pubinfo.pdf %}
