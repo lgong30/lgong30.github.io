@@ -137,6 +137,7 @@ publications:
     conference: ACM SIGMETRICS 2017
     url: https://www.sigmetrics.org/sigmetrics2017/schedule.html
     type: conference
+    pdf: http://www.cc.gatech.edu/classes/AY2017/cs7260_spring/qps-switching.pdf
   - pub2:
     title: Impairment- and Splitting-Aware Cloud-Ready Multicast Provisioning in Elastic Optical Networks
     authors: ["Zuqing Zhu", "Xiahe Liu", "Yixiang Wang", "Wei Lu", "Long Gong", "Shui Yu", "Nirwan Ansari"]
