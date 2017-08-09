@@ -79,7 +79,7 @@ education:
   - edu3:
     institution: Georgia Institution of Technology
     address: Atlanta, GA, USA 
-    degree: PhD
+    degree: Ph.D.
     major: Computer Science
     started: 2015
     duration: (2015 - Present)
@@ -190,7 +190,10 @@ teaching:
 service:
   - s1: 
     type: Reviewer
-    details: ["IEEE INFOCOM 2016"]
+    details: 
+      - "IEEE INFOCOM 2016<sup>*</sup>"
+      - "<a href='http://www.comsoc.org/cl' target='_blank'>IEEE Communication Letters</a>"
+      - "<a href='https://www.computer.org/web/tpds' target='_blank'>IEEE Transactions on Parallel and Distributed Systems</a>"
 
 
 programmingSkills:
