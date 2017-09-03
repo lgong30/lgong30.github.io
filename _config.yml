@@ -102,6 +102,12 @@ education:
     description: ""
 
 news:
+  - summary: Webpage Updated
+    time: Sept. 2, 2017
+    content: 1. Add course info<br/>2. Update reviewer info<br/>3. CV will be available ASAP!!!
+  - summary: Paper got rejected
+    time: Sept. 2, 2017
+    content: Unfornately, our paper on hybrid switching got rejected by IFIF Performance 2017.
   - summary: Student Travel Grant Award
     time: May 23, 2017
     content: Long got the Student Travel Grant Award for SIGMETRICS 2017
@@ -183,15 +189,18 @@ projects:
 
 
 teaching:
+  - t2:
+    name: CS 3251 Computer Networking I
+    url: https://piazza.com/gatech/cs3251a
   - t1:
-    name: CS7260 Design and Analysis of Network/Router Algorithms and Hardware
+    name: CS7260 Design &amp; Analysis of Network/Router Algorithms &amp; Hardware
     url: http://www.cc.gatech.edu/classes/AY2017/cs7260_spring
 
 service:
   - s1: 
     type: Reviewer
     details: 
-      - "IEEE INFOCOM 2016<sup>*</sup>"
+      - "IEEE INFOCOM 2016 (secondary reviewer)"
       - "<a href='http://www.comsoc.org/cl' target='_blank'>IEEE Communication Letters</a>"
       - "<a href='https://www.computer.org/web/tpds' target='_blank'>IEEE Transactions on Parallel and Distributed Systems</a>"
 
@@ -232,6 +241,50 @@ programmingSkills:
   #   name: PHP, HTML, JavaScript, CSS
   #   percentage: 20%
 
+courses:
+  finished:
+    - c5:
+      name: MATH 6338 Real Analysis II 
+      url: http://people.math.gatech.edu/~heil/6338/summer08/
+    - c4: 
+      name: MATH 6761 Stochastic Process I 
+      url: https://www.math.gatech.edu/courses/math/6761
+    - c4: 
+      name: MATH 6337 Real Analysis I 
+      url: http://people.math.gatech.edu/~bwick6/teaching/math6337.html
+    - c3:
+      name: CS7260 Design &amp; Analysis of Network/Router Algorithms &amp; Hardware
+      url: https://www.cc.gatech.edu/classes/AY2017/cs7260_spring/
+    - c2:
+      name: CS 6505 Computability &amp; Algorithms 
+      url: https://www.cc.gatech.edu/classes/AY2010/cs6505_spring/
+    - c1:
+      name: CS 6250 Computer Networks 
+      url: https://www.cc.gatech.edu/~ammar/6250-Spring2013/
+  ongoing:
+    - c2:
+      name: CS 7646 Machine Learning for Trading
+      url: https://www.udacity.com/course/machine-learning-for-trading--ud501
+    - c1:
+      name: CS6210 Advanced Operating Systems
+      url: https://www.udacity.com/wiki/ud156
+  interested:
+    - c4: 
+      name: GT CS 6290 High Performance Computer Architecture
+      url: https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
+    - c3:
+      name: MIT 6.854 Advanced Algorithms (Spring 2016)
+      url: https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
+    - c2:
+      name: Machine Learning on Coursera by Andrew Ng 
+      url: https://www.coursera.org/learn/machine-learning
+    - c1:
+      name: UMass Amherst CS 377 Operting Systems (Spring 2014)
+      url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
+
+
+
+
 references:
   - ref1:
     name: resumecard
@@ -245,5 +298,7 @@ references:
     name: stanley-freelancer-theme
     url: http://blacktie.co/2014/01/stanley-freelancer-theme/
     page: home
+
+
 # Gems
 gems: [jekyll-paginate]

@@ -2,17 +2,22 @@
     <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Teaching &amp; Professional Services</h2>
     {% if site.teaching %}
     <div class="item">
-        <span class="project-title">Teaching</span> - <span class="project-tagline">{% for t in site.teaching %}<a href="{{ t.url }}">{{ t.name }}</a>{% if forloop.last==false %}, {% endif %}{% endfor %}</span>   
+        <span class="project-title">Teaching</span> <br/>
+        {% for t in site.teaching %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="project-tagline"><a href="{{ t.url }}">{{ t.name }}</a></span><br/>   
+        {% endfor %}
     </div><!--//item-->
     {% endif %}
 
     {% if site.service %}
     <div class="item">  
         {% for s in site.service %}
-        <span class="project-title">{{ s.type }}</span> - <span class="project-tagline">{% for d in s.details %}{{ d }}{% if forloop.last==false %}, {% endif %}{% endfor %}</span>   
+        <span class="project-title">{{ s.type }}</span> <br/>
+        {% for d in s.details %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="project-tagline">{{ d }}</span> <br/>
+        {% endfor %}
         {% endfor %}
     </div><!--//item-->
-    <hr/>
-    <p>"*" indicates secondary reviewer</p>
+    
     {% endif %}
 </section><!--//section-->

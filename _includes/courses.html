@@ -1,0 +1,29 @@
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Courses</h2>
+    {% if site.courses.finished %}
+    <div class="item">
+        <span class="project-title">Accomplished Courses</span> <br/>
+        {% for t in site.courses.finished %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="project-tagline"><a href="{{ t.url }}">{{ t.name }}</a></span><br/>
+        {% endfor %}
+    </div><!--//item-->
+    {% endif %}
+
+    {% if site.courses.ongoing %}
+    <div class="item">
+        <span class="project-title">Ongoing Courses</span><br/>  
+        {% for t in site.courses.ongoing %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="project-tagline"><a href="{{ t.url }}">{{ t.name }}</a></span><br/>
+        {% endfor %}
+    </div><!--//item-->
+    {% endif %}
+
+    {% if site.courses.interested %}
+    <div class="item">  
+        <span class="project-title">Other Interested Courses</span><br/>
+        {% for t in site.courses.interested %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- <span class="project-tagline"><a href="{{ t.url }}">{{ t.name }}</a></span><br/>
+        {% endfor %}
+    </div><!--//item-->
+    {% endif %}
+</section><!--//section-->
