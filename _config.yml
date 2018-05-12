@@ -280,7 +280,7 @@ courses:
       name: MATH 6337 - Real Analysis I 
       url: http://people.math.gatech.edu/~bwick6/teaching/math6337.html
     - c3:
-      name: CS7260 - Design &amp; Analysis of Network/Router Algorithms &amp; Hardware
+      name: CS 7260 - Network Algorithmics
       url: https://www.cc.gatech.edu/classes/AY2017/cs7260_spring/
     - c2:
       name: CS 6505 - Computability &amp; Algorithms 
@@ -290,10 +290,10 @@ courses:
       url: https://www.cc.gatech.edu/~ammar/6250-Spring2013/
   interested:
     - c4: 
-      name: GT CS 6290 High Performance Computer Architecture
+      name: GT CS 6290 - High Performance Computer Architecture
       url: https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
     - c3:
-      name: MIT 6.854 Advanced Algorithms (Spring 2016)
+      name: MIT 6.854 - Advanced Algorithms (Spring 2016)
       url: https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c
     - c2:
       name: Machine Learning on Coursera by Andrew Ng 
