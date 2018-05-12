@@ -54,6 +54,9 @@ research_interests:
   - data streaming
   - online social networking
   - software defined networking
+  - network function virtualization
+  - programmable switch
+  - scheduling in wireless networks
   
 
 advisor:
@@ -71,7 +74,7 @@ author:
   edu_email: gonglong@gatech.edu
   edu_email_display: "gonglong@gatech.edu"
   url: cc.gatech.edu/~lgong30
-  github: github.com/lgong30
+  github: github.com/saber-dragon
   web: lgong30.github.io
   linkedin: linkedin.com/in/long-gong-14292859
 
@@ -82,7 +85,7 @@ education:
     degree: Ph.D.
     major: Computer Science
     started: 2015
-    duration: (2015 - Present)
+    duration: (2015 - 2019)
     description: "" 
   - edu2:
     institution: University of Science and Technology of China (USTC)
@@ -186,6 +189,12 @@ experiences:
     description: Designed a novel virtual network embedding algorithm, which increased the network utilization and decreased the time complexity. (INFOCOM 2014)
 
 projects:
+  - proj4:
+    name: Refining Data Flow Information Using Infeasible Path
+    description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/DemandDrivenDefUseAnalysis" target="_blank">here</a>
+  - proj3:
+    name: Path-sensitive Data-flow Analysis
+    description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/PathSensitiveDataAnalysis" target="_blank">here</a>.
   - proj2:
     name: QPS
     description: A simple yet effective general add-on approach to existing crossbar scheduling algorithms, which could boost the performance (throughput or delay or both) of existing scheduling algorithms with "nearly no" computational overhead
