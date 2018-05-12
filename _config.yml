@@ -88,7 +88,7 @@ education:
     institution: University of Science and Technology of China (USTC)
     address: Hefei, Anhui, China
     degree: M.E.
-    major: Electronic Enginerring
+    major: Electronic Engineering
     started: 2012
     duration: (2012 - 2015)
     description: ""
@@ -96,12 +96,15 @@ education:
     institution: University of Science and Technology of China (USTC)
     address: Hefei, Anhui, China
     degree: B.E.
-    major: Electronic Enginerring
+    major: Electronic Engineering
     started: 2008
     duration: (2005 - 2012)
     description: ""
 
 news:
+  - summary: Papers Got Accepted 
+    time: May. 12, 2018
+    content: Two of our papers on hybrid switching got accepted by IEEE Cloud and Cloud, respectively.
   - summary: Webpage Updated 
     time: Sept. 5, 2017
     content: Latest resume of Long is available!!!
@@ -144,7 +147,7 @@ publications:
     title: "Queue-Proportional Sampling: A Better Approach to Crossbar Scheduling for Input-Queued Switches"
     authors: ["Long Gong", "Paul Tune", "Liang Liu", "Sen Yang", "Jun (Jim) Xu"]
     conference: ACM SIGMETRICS 2017
-    url: https://www.sigmetrics.org/sigmetrics2017/schedule.html
+    url: https://dl.acm.org/citation.cfm?id=3084440
     type: conference
     pdf: http://www.cc.gatech.edu/classes/AY2017/cs7260_spring/qps-switching.pdf
   - pub2:
@@ -203,6 +206,7 @@ service:
   - s1: 
     type: Reviewer
     details: 
+      - "<a href='https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90' target='_blank'>IEEE/ACM Transactions on Networking</a>"
       - "IEEE INFOCOM 2016 (secondary reviewer)"
       - "<a href='http://www.comsoc.org/cl' target='_blank'>IEEE Communication Letters</a>"
       - "<a href='https://www.computer.org/web/tpds' target='_blank'>IEEE Transactions on Parallel and Distributed Systems</a>"
@@ -211,8 +215,11 @@ service:
 programmingSkills:
   - skill1:
     name: C/C++
-    percentage: 85%
+    percentage: 88%
     packages:
+      - pack0:
+        name: Google Benchmark
+        url: https://github.com/google/benchmark
       - pack1:
         name: Google Test 
         url: https://github.com/google/googletest
@@ -246,31 +253,32 @@ programmingSkills:
 
 courses:
   finished:
+    - c8:
+      name: CS 6241 - Compiler Design 
+    - c7:
+      name: CS 6210 - Advanced Operating Systems
+      url: https://www.udacity.com/wiki/ud156
+    - c6:
+      name: CS 7646 - Machine Learning for Trading
+      url: https://www.udacity.com/course/machine-learning-for-trading--ud501
     - c5:
-      name: MATH 6338 Real Analysis II 
+      name: MATH 6338 - Real Analysis II 
       url: http://people.math.gatech.edu/~heil/6338/summer08/
     - c4: 
-      name: MATH 6761 Stochastic Process I 
+      name: MATH 6761 - Stochastic Process I 
       url: https://www.math.gatech.edu/courses/math/6761
     - c4: 
-      name: MATH 6337 Real Analysis I 
+      name: MATH 6337 - Real Analysis I 
       url: http://people.math.gatech.edu/~bwick6/teaching/math6337.html
     - c3:
-      name: CS7260 Design &amp; Analysis of Network/Router Algorithms &amp; Hardware
+      name: CS7260 - Design &amp; Analysis of Network/Router Algorithms &amp; Hardware
       url: https://www.cc.gatech.edu/classes/AY2017/cs7260_spring/
     - c2:
-      name: CS 6505 Computability &amp; Algorithms 
+      name: CS 6505 - Computability &amp; Algorithms 
       url: https://www.cc.gatech.edu/classes/AY2010/cs6505_spring/
     - c1:
-      name: CS 6250 Computer Networks 
+      name: CS 6250 - Computer Networks 
       url: https://www.cc.gatech.edu/~ammar/6250-Spring2013/
-  ongoing:
-    - c2:
-      name: CS 7646 Machine Learning for Trading
-      url: https://www.udacity.com/course/machine-learning-for-trading--ud501
-    - c1:
-      name: CS6210 Advanced Operating Systems
-      url: https://www.udacity.com/wiki/ud156
   interested:
     - c4: 
       name: GT CS 6290 High Performance Computer Architecture
