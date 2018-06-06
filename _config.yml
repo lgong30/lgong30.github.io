@@ -146,6 +146,17 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub5:
+    title: "2-Hop Eclipse: A Fast Algorithm for Bandwidth-Efficient Data Center Switching"
+    authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
+    conference: 2018 International Conference on Cloud Computing (CLOUD 2018)
+    url: http://icws.org/2018/resources/SCF2018-AP-0606.pdf
+  - pub4:
+    title: "Best First Fit (BFF): An Approach to Partially Reconfigurable Hybrid Circuit and Packet
+Switching"
+    authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
+    conference: IEEE CLOUD 2018
+    url: http://conferences.computer.org/services/2018/assets/files/IEEECongress_techprogram_CHAIRS.pdf
   - pub3:
     title: "Queue-Proportional Sampling: A Better Approach to Crossbar Scheduling for Input-Queued Switches"
     authors: ["Long Gong", "Paul Tune", "Liang Liu", "Sen Yang", "Jun (Jim) Xu"]
