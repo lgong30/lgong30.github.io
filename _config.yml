@@ -106,6 +106,12 @@ education:
     description: ""
 
 news:
+  - summary: Webpage Updated 
+    time: Dec. 19, 2018
+    content: 1. Add teaching experience<br />2. Add a recent tiny project<br />3. Add a Github repo for fastpass blog.
+  - summary: Got Internship
+    time: Dec. 19, 2018
+    content: Long has got a Software Engineer Intern at Facebook for summer 2019. He will work with Jasmeet Bagga at the Network Systems Team.
   - summary: Webpage Updated
     time: Dec. 5, 2018
     content: 1. Add experience<br />2. Update paper info<br />3. Update CV
@@ -215,6 +221,9 @@ experiences:
     description: Designed a novel virtual network embedding algorithm, which increased the network utilization and decreased the time complexity. (INFOCOM 2014)
 
 projects:
+  - proj5:
+    name: "LaTeXCV: Easy LaTeX CV Maker"
+    description: This is self-motivated tiny project. Details and source codes are available <a herf="https://github.com/long-gong/latexcv" target="_blank">here</a>
   - proj4:
     name: Refining Data Flow Information Using Infeasible Path
     description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/DemandDrivenDefUseAnalysis" target="_blank">here</a>
@@ -230,6 +239,9 @@ projects:
 
 
 teaching:
+  - t3:
+    name: CS 6250 Computer Networks 
+    url: https://piazza.com/gatech/cs6250a
   - t2:
     name: CS 3251 Computer Networking I
     url: https://piazza.com/gatech/cs3251a

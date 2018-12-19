@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+  {% include head.html %}
 
-<body>
-    {% include google_tag_after_body.html %}
-    {% include header.html %}
+  <body>
+    {% include google_tag_after_body.html %} {% include header.html %}
     <!-- Page Content -->
-    <div class="container">
-            {{ content }}
-    </div>
+    <div class="container">{{ content }}</div>
     {% include footer.html %}
-    
-</body>
-
+  </body>
 </html>
