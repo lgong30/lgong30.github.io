@@ -223,7 +223,7 @@ experiences:
 projects:
   - proj5:
     name: "LaTeXCV: Easy LaTeX CV Maker"
-    description: This is self-motivated tiny project. Details and source codes are available <a herf="https://github.com/long-gong/latexcv" target="_blank">here</a>
+    description: This is a self-motivated tiny project. Details and source codes are available <a herf="https://github.com/long-gong/latexcv" target="_blank">here</a>
   - proj4:
     name: Refining Data Flow Information Using Infeasible Path
     description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/DemandDrivenDefUseAnalysis" target="_blank">here</a>
