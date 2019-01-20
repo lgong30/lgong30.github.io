@@ -344,10 +344,18 @@ courses:
       url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
 
 shares:
+  - share03:
+    name: "CLion: A cross-platform IDE for C/C++"
+    url: https://www.jetbrains.com/clion/
+    description: An excellent CMake-based C/C++ cross-platform IDE by JetBrains, it is conditionally free for students. Actually besides CLion, JetBrains also has many other good products, such as <a href="https://www.jetbrains.com/pycharm/" target="_blank">PyCharm</a> (for PYTHON) and <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStrom</a> (for JavaScript).
+  - share02:
+    name: "BibTeX-js"
+    url: https://github.com/pcooksey/bibtex-js
+    description: "An excellent parser to parse a BibTeX file (i.e., \".bib\" file) and render it as HTML. Here are two examples: <a href='https://network-theory-group.github.io/' target='_blank'>Example One</a> and <a href='https://www.cc.gatech.edu/home/jx/pub_list.html' target='_blank'>Example Two</a>."
   - share01:
     name: "Hitting the Nail on the Head: Interdisciplinary Research in Computer Networking"
     url: https://www.youtube.com/watch?v=VEEPJjg2pkI
-    description: "A very nice talk from <a href=\"http://www.cs.princeton.edu/~jrex/\" target=\"_blank\">Prof. Jennifer Rexford</a> on <B>Interdisciplinary Research in Computer Networking</B>"
+    description: "A very nice talk from <a href=\"http://www.cs.princeton.edu/~jrex/\" target=\"_blank\">Prof. Jennifer Rexford</a> on <B>Interdisciplinary Research in Computer Networking</B>."
 
 
 
