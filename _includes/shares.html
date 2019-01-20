@@ -1,0 +1,13 @@
+<section class="section projects-section">
+  <h2 class="section-title"><i class="fa fa-share-square"></i>Shares</h2>
+  {% for share in site.shares %}
+  <div class="item">
+    <span class="project-title"
+      ><a href="{{ share.url }}">{{ share.name }} </a></span
+    >
+    - <span class="project-tagline">{{ share.description }}</span>
+  </div>
+  <!--//item-->
+  {% endfor %}
+</section>
+<!--//section-->

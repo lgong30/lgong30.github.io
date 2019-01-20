@@ -1,37 +1,50 @@
 <section class="section publication-section">
-    <h2 class="section-title"><i class="fa fa-book"></i>Recent Publications</h2>
-    <div class="intro">
-        <p>You can get the full publication list <a href="https://scholar.google.com/citations?user=qtAikfAAAAAJ&hl=en" target="_blank">here</a>.</p>
-    </div><!--//intro-->
-    {% for pubinfo in site.publications %}
-            <div class="item">
-                <div class="meta">
-                    <div class="upper-row">
-                        <h3 class="paper-title">{{ pubinfo.title }}</h3>
-                    </div><!--//upper-row-->
-                    <div class="paper-authors">{% if pubinfo.authors %}
-                            {% for author in pubinfo.authors %}{% if forloop.first == false %}, {% endif %}{% if author == site.author.full_name %}<B>{{ author }}</B>{% else %}{{ author }}{% endif %}{% endfor %}
-                        {% endif %}
-                    </div>
-                    <div class="paper-source">
-                        {% if pubinfo.type == "journal" %}
-                            <i class="fa fa-book"></i>
-                            {{ pubinfo.journal }}
-                        {% else %}
-                            <i class="fa fa-users"></i>
-                            {{ pubinfo.conference }}
-                        {% endif %} |
-                        {% if pubinfo.pdf %}
-                        <a href="{{ pubinfo.pdf }}" target="_blank"><i class="fa fa-file-pdf-o"> PDF</i></a>
-                        {% endif %} |
-                        {% if pubinfo.url %}
-                        <a href="{{ pubinfo.url }}" target="_blank"><i class="fa fa-gg"> More Info</i></a>
-                        {% endif %}
-                    </div>
-                </div><!--//meta-->
-                <div class="paper-details">
-                    <p>{{ pubinfo.abstract }} </p>
-                </div><!--//details-->
-            </div><!--//item-->
-    {% endfor %}
-</section><!--//section-->
+  <h2 class="section-title"><i class="fa fa-book"></i>Recent Publications</h2>
+  <div class="intro">
+    <p>
+      You can get the full publication list
+      <a
+        href="https://scholar.google.com/citations?user=qtAikfAAAAAJ&hl=en"
+        target="_blank"
+        >here</a
+      >.
+    </p>
+  </div>
+  <!--//intro-->
+  {% for pubinfo in site.publications %}
+  <div class="item">
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="paper-title">{{ pubinfo.title }}</h3>
+      </div>
+      <!--//upper-row-->
+      <div class="paper-authors">
+        {% if pubinfo.authors %} {% for author in pubinfo.authors %}{% if
+        forloop.first == false %}, {% endif %}{% if author ==
+        site.author.full_name %}<B>{{ author }}</B
+        >{% else %}{{ author }}{% endif %}{% endfor %} {% endif %}
+      </div>
+      <div class="paper-source">
+        {% if pubinfo.type == "journal" %} <i class="fa fa-book"></i>
+        {{ pubinfo.journal }} {% else %} <i class="fa fa-users"></i>
+        {{ pubinfo.conference }} {% endif %} | {% if pubinfo.pdf %}
+        <a href="{{ pubinfo.pdf }}" target="_blank"
+          ><i class="fa fa-file-pdf-o"> PDF</i></a
+        >
+        {% endif %} | {% if pubinfo.url %}
+        <a href="{{ pubinfo.url }}" target="_blank"
+          ><i class="fa fa-gg"> More Info</i></a
+        >
+        {% endif %}
+      </div>
+    </div>
+    <!--//meta-->
+    <div class="paper-details">
+      <p>{{ pubinfo.abstract }}</p>
+    </div>
+    <!--//details-->
+  </div>
+  <!--//item-->
+  {% endfor %}
+</section>
+<!--//section-->
