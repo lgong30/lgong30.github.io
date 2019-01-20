@@ -344,6 +344,10 @@ courses:
       url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
 
 shares:
+  - share04:
+    name: "Sa-TikZ: TikZ library to draw switching architectures"
+    url: "http://cfiandra.github.io/Sa-TikZ/"
+    description: "A TikZ library for drawing various switching architectures (e.g., Clos networks, Benes networks, and Banyan networks)"
   - share03:
     name: "CLion: A cross-platform IDE for C/C++"
     url: https://www.jetbrains.com/clion/
@@ -351,7 +355,7 @@ shares:
   - share02:
     name: "BibTeX-js"
     url: https://github.com/pcooksey/bibtex-js
-    description: "An excellent parser to parse a BibTeX file (i.e., \".bib\" file) and render it as HTML. Here are two examples: <a href='https://network-theory-group.github.io/' target='_blank'>Example One</a> and <a href='https://www.cc.gatech.edu/home/jx/pub_list.html' target='_blank'>Example Two</a>."
+    description: "An excellent tool to parse a BibTeX file (i.e., \".bib\" file) and render it as HTML. Here are two examples: <a href='https://network-theory-group.github.io/' target='_blank'>Example One</a> and <a href='https://www.cc.gatech.edu/home/jx/pub_list.html' target='_blank'>Example Two</a>."
   - share01:
     name: "Hitting the Nail on the Head: Interdisciplinary Research in Computer Networking"
     url: https://www.youtube.com/watch?v=VEEPJjg2pkI
