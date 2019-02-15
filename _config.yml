@@ -77,7 +77,7 @@ author:
   url: cc.gatech.edu/~lgong30
   github: github.com/long-gong
   web: lgong30.github.io
-  linkedin: https://www.linkedin.com/in/lgong30
+  linkedin: lgong30
 
 education:
   - edu3:
@@ -344,6 +344,10 @@ courses:
       url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
 
 shares:
+  - share05:
+    name: "Combined BibTeX-js and vue.js"
+    url: "https://github.com/long-gong/vue-bibtex"
+    description: "A MVC based tool for rendering BibTeX entries"
   - share04:
     name: "Sa-TikZ: TikZ library to draw switching architectures"
     url: "http://cfiandra.github.io/Sa-TikZ/"
