@@ -224,15 +224,19 @@ experiences:
     description: Designed a novel virtual network embedding algorithm, which increased the network utilization and decreased the time complexity. (INFOCOM 2014)
 
 projects:
-  - proj5:
+  - proj6:
+    name: "Javascript Parser & Render for BibTeX"
+    url: "https://github.com/long-gong/vue-bibtex.git"
+  - proj5: This is a self-motivated tiny project. Details and source codes are available <a href="https://github.com/long-gong/vue-bibtex.git" target="_blank">here</a>
     name: "LaTeXCV: Easy LaTeX CV Maker"
-    description: This is a self-motivated tiny project. Details and source codes are available <a herf="https://github.com/long-gong/latexcv" target="_blank">here</a>
+    url: "https://github.com/long-gong/latexcv"
+    description: This is another self-motivated tiny project. Details and source codes are available <a href="https://github.com/long-gong/latexcv" target="_blank">here</a>
   - proj4:
     name: Refining Data Flow Information Using Infeasible Path
-    description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/DemandDrivenDefUseAnalysis" target="_blank">here</a>
+    description: This is a compiler course project. Details are available <a href="https://github.com/saber-dragon/DemandDrivenDefUseAnalysis" target="_blank">here</a>
   - proj3:
     name: Path-sensitive Data-flow Analysis
-    description: This is a compiler course project. Details are available <a herf="https://github.com/saber-dragon/PathSensitiveDataAnalysis" target="_blank">here</a>.
+    description: This is a compiler course project. Details are available <a href="https://github.com/saber-dragon/PathSensitiveDataAnalysis" target="_blank">here</a>.
   - proj2:
     name: QPS
     description: A simple yet effective general add-on approach to existing crossbar scheduling algorithms, which could boost the performance (throughput or delay or both) of existing scheduling algorithms with "nearly no" computational overhead
