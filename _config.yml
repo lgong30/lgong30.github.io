@@ -227,7 +227,8 @@ projects:
   - proj6:
     name: "Javascript Parser & Render for BibTeX"
     url: "https://github.com/long-gong/vue-bibtex.git"
-  - proj5: This is a self-motivated tiny project. Details and source codes are available <a href="https://github.com/long-gong/vue-bibtex.git" target="_blank">here</a>
+    description: This is a self-motivated tiny project. Details and source codes are available <a href="https://github.com/long-gong/vue-bibtex.git" target="_blank">here</a>
+  - proj5: 
     name: "LaTeXCV: Easy LaTeX CV Maker"
     url: "https://github.com/long-gong/latexcv"
     description: This is another self-motivated tiny project. Details and source codes are available <a href="https://github.com/long-gong/latexcv" target="_blank">here</a>
