@@ -52,7 +52,6 @@ research_interests:
   - scheduling for crossbar switches
   - switching in data center networks
   - data streaming
-  - online social networking
   - software defined networking
   - network function virtualization
   - programmable switch
@@ -198,6 +197,13 @@ Switching"
     abstract: This paper tries to solve the location-constrained virtual network embedding (LC-VNE) problem efficiently. We first investigate the complexity of LC-VNE, and by leveraging the graph bisection problem, we provide the first formal proof of the  -completeness and inapproximability result of LC-VNE. Then, we propose two novel LC-VNE algorithms based on a compatibility graph (CG) to achieve integrated node and link mapping. In particular, in the CG, each node represents a candidate substrate path for a virtual link, and each link indicates the compatible relation between its two endnodes. Our theoretical analysis proves that the maximal clique in the CG is also the maximum one when the substrate network has sufficient resources. With CG, we reduce LC-VNE to the minimum-cost maximum clique problem, which inspires us to propose two efficient LC-VNE heuristics. Extensive numerical simulations demonstrate that compared with the existing ones, our proposed LC-VNE algorithms have significantly reduced time complexity and can provide smaller gaps to the optimal solutions, lower blocking probabilities, and higher time-average revenue as well.
 
 experiences:
+  - exp3:
+    institution: Facebook
+    mentor: ["Alex Eckert"]
+    started: 2019
+    duration: (05/2019 - 08/2019)
+    address: Menlo Park, CA
+    position: Intern
   - exp3:
     institution: Alibaba Group (U.S.) Inc
     mentor: ["Gang Cheng"]
