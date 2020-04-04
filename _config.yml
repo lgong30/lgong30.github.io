@@ -49,6 +49,8 @@ paginate_path: "blog/page:num/"
 
 # Customized variables
 research_interests:
+  - set reconciliation
+  - approximate nearest neighbor search on massive datasets
   - scheduling for crossbar switches
   - switching in data center networks
   - data streaming
@@ -105,6 +107,9 @@ education:
     description: ""
 
 news:
+  -  summary: Webpage Updated
+     time: April 4, 2020
+     content: 1. Tow of switching papers got accepted by HPSR 2020 and ValueTools 2020, respectively<br/>2. Defense time was determined
   - summary: Webpage Updated
     time: Jan. 20, 2019
     content: Add a "shares" section on about page
@@ -161,14 +166,23 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub7:
+    title: "SERENADE: A Parallel Iterative Algorithm for Crossbar Scheduling in Input-Queued Switches"
+    authors: ["Long Gong", "Liang Liu", "Sen Yang", "Jun (Jim) Xu", "Yi Xie", "Xinbing Wang"]
+    conference: The 2020 IEEE 21st International Conference on High-Performance Switching and Routing (HPSR 2020)
+    url: https://hpsr2020.ieee-hpsr.org/program/
+  - pub6:
+    title: "QPS-r: A Cost-Effective Iterative Switching Algorithm for Input-Queued Switches"
+    authors: ["Long Gong", "Jun (Jim) Xu", "Liang Liu", "Siva Theja Maguluri"]
+    conference: 13th EAI International Conference on Performance Evaluation Methodologies and Tools
+    url: http://valuetools.org/accepted-papers/
   - pub5:
     title: "2-Hop Eclipse: A Fast Algorithm for Bandwidth-Efficient Data Center Switching"
     authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
     conference: 2018 International Conference on Cloud Computing (CLOUD 2018)
     url: http://icws.org/2018/resources/SCF2018-AP-0606.pdf
   - pub4:
-    title: "Best First Fit (BFF): An Approach to Partially Reconfigurable Hybrid Circuit and Packet
-Switching"
+    title: "Best First Fit (BFF): An Approach to Partially Reconfigurable Hybrid Circuit and Packet Switching"
     authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
     conference: IEEE CLOUD 2018
     url: http://conferences.computer.org/services/2018/assets/files/IEEECongress_techprogram_CHAIRS.pdf
@@ -230,6 +244,14 @@ experiences:
     description: Designed a novel virtual network embedding algorithm, which increased the network utilization and decreased the time complexity. (INFOCOM 2014)
 
 projects:
+  - proj8:
+    name: "Birkhoff–von Neumann Decomposition"
+    url: "https://github.com/long-gong/bvd.git"
+    description: This is part of our crossbar scheduling project.
+  - proj7:
+    name: "Euclidean2Hamming DataSets for ANNS"
+    url: "https://github.com/long-gong/datasets.git"
+    description: This is part of our approximate nearest neighbor search (ANNS) project.
   - proj6:
     name: "Javascript Parser & Render for BibTeX"
     url: "https://github.com/long-gong/vue-bibtex.git"
@@ -355,6 +377,18 @@ courses:
       url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
 
 shares:
+  - share08:
+    name: "Invertible Bloom Lookup Table implementation in C++"
+    url: "https://github.com/gavinandresen/IBLT_Cplusplus"
+    description: "Efficient IBLT implementation in C++."
+  - share07:
+    name: "Googletest - Google Testing and Mocking Framework"
+    url: "https://github.com/google/googletest"
+    description: "Useful test framework in C++."
+  - share06:
+    name: "Google's gflags: The gflags package contains a C++ library that implements commandline flags processing."
+    url: "https://github.com/gflags/gflags"
+    description: "Useful package for defining flags in C++."
   - share05:
     name: "Combined BibTeX-js and vue.js"
     url: "https://github.com/long-gong/vue-bibtex"
