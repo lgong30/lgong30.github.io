@@ -318,6 +318,27 @@ programmingSkills:
       - pack5:
         name: HdrHistogram 
         url: https://github.com/HdrHistogram/HdrHistogram_c
+      - pack6:
+        name: Google gflags
+        url: https://github.com/gflags/gflags
+      - pack7:
+        name: Invertible Bloom Lookup Table (IBLT) implementation
+        url: https://github.com/gavinandresen/IBLT_Cplusplus
+      - pack8:
+        name: Fast C++ logging library
+        url: https://github.com/gabime/spdlog
+      - pack9:
+        name: C++ gRPC
+        url: https://github.com/grpc/grpc/tree/master/examples/cpp
+      - pack10:
+        name: "CLI11: command line parser for C++11"
+        url: https://github.com/CLIUtils/CLI11
+      - pack11:
+        name: HighFive - Header-only C++ HDF5 interface
+        url: https://github.com/BlueBrain/HighFive
+      - pack12:
+        name: "nanoflann: a C++11 header-only library for Nearest Neighbor (NN) search with KD-trees"
+        url: https://github.com/jlblancoc/nanoflann
   - skill2:
     name: Python
     percentage: 75%
@@ -377,18 +398,6 @@ courses:
       url: https://www.youtube.com/watch?v=dv4mXBsv6TI&list=PLacuG5pysFbDQU8kKxbUh4K5c1iL5_k7k
 
 shares:
-  - share08:
-    name: "Invertible Bloom Lookup Table implementation in C++"
-    url: "https://github.com/gavinandresen/IBLT_Cplusplus"
-    description: "Efficient IBLT implementation in C++."
-  - share07:
-    name: "Googletest - Google Testing and Mocking Framework"
-    url: "https://github.com/google/googletest"
-    description: "Useful test framework in C++."
-  - share06:
-    name: "Google's gflags: The gflags package contains a C++ library that implements commandline flags processing."
-    url: "https://github.com/gflags/gflags"
-    description: "Useful package for defining flags in C++."
   - share05:
     name: "Combined BibTeX-js and vue.js"
     url: "https://github.com/long-gong/vue-bibtex"
