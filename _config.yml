@@ -107,9 +107,12 @@ education:
     description: ""
 
 news:
+  - summary: Paper Got Accepted
+    time: April 25, 2020
+    content: Our recent paper on approximate nearest neighbor search got accepted by <a href="https://vldb2020.org/" target="_blank">VLDB 2020</a>.
   - summary: Dissertation Defense Passed
     time: April 24, 2020
-    content: Long passed his defense of dissertation. Thanks @<a href="https://www.cc.gatech.edu/home/jx/" target="_blank">Prof. Jim Xu</a>, @<a href="https://www.cc.gatech.edu/fac/Mostafa.Ammar/index.html" target="_blank">Prof. Mostafa Ammar</a>, @<a href="https://www.zegura.org/" target="_blank">Prof. Ellen Zegura</a>, @<a target="_blank" href="https://sites.google.com/site/sivatheja/">Prof. Siva Theja Maguluri</a>， and @<a target="_blank" href="http://cwcserv.ucsd.edu/~billlin/">Prof. Bill Lin</a>! Thanks @many many others!
+    content: Long has passed his defense of dissertation. Thanks @<a href="https://www.cc.gatech.edu/home/jx/" target="_blank">Prof. Jim Xu</a>, @<a href="https://www.cc.gatech.edu/fac/Mostafa.Ammar/index.html" target="_blank">Prof. Mostafa Ammar</a>, @<a href="https://www.zegura.org/" target="_blank">Prof. Ellen Zegura</a>, @<a target="_blank" href="https://sites.google.com/site/sivatheja/">Prof. Siva Theja Maguluri</a>， and @<a target="_blank" href="http://cwcserv.ucsd.edu/~billlin/">Prof. Bill Lin</a>! Thanks @many many others!
   - summary: Defense Time Decided
     time: April 13, 2020
     content: Long has decided his defense of dissertation time. Public annoucement is available <a href="http://hg.gatech.edu/node/634305" target="_blank">here</a>.
