@@ -49,6 +49,9 @@ paginate_path: "blog/page:num/"
 
 # Customized variables
 research_interests:
+  - compiler
+  - operating system
+  - GPUs
   - set reconciliation
   - approximate nearest neighbor search on massive datasets
   - scheduling for crossbar switches
@@ -71,11 +74,11 @@ advisor:
 
 author:
   full_name: Long Gong
-  role: Research/Teaching Assistant
+  role: Graduate (Research/Teaching) Assistant
   email: long.github@gmail.com
   edu_email: gonglong@gatech.edu
   edu_email_display: "gonglong@gatech.edu"
-  url: cc.gatech.edu/~lgong30
+  url: lgong30.github.io
   github: github.com/long-gong
   web: lgong30.github.io
   linkedin: www.linkedin.com/in/lgong30
@@ -107,6 +110,9 @@ education:
     description: ""
 
 news:
+  - summary: Paper Got Major Revision
+    time: May 15, 2020
+    content: Our recent paper on set difference got MAJOR REVISION feedback from <a href="https://vldb2021.org/" target="_blank">VLDB 2021</a>. Hope we can evetually get it in!
   - summary: Paper Got Accepted
     time: April 25, 2020
     content: Our recent paper on approximate nearest neighbor search got accepted by <a href="https://vldb2020.org/" target="_blank">VLDB 2020</a>.
@@ -175,26 +181,38 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub8:
+    title: "iDEC: Indexable Distance Estimating Codes for Approximate Nearest Neighbor Search"
+    authors: ["Long Gong", "Huayi Wang", "Mitsunori Ogihara", "Jun Xu"]
+    conference: International Conference on Very Large Data Bases (VLDB) 2020
+    type: conference
+    pdf: http://www.vldb.org/pvldb/vol13/p1483-gong.pdf
   - pub7:
     title: "SERENADE: A Parallel Iterative Algorithm for Crossbar Scheduling in Input-Queued Switches"
     authors: ["Long Gong", "Liang Liu", "Sen Yang", "Jun (Jim) Xu", "Yi Xie", "Xinbing Wang"]
     conference: The 2020 IEEE 21st International Conference on High-Performance Switching and Routing (HPSR 2020)
-    url: https://hpsr2020.ieee-hpsr.org/program/
+    type: conference
+    url: https://ieeexplore.ieee.org/document/9098995
   - pub6:
     title: "QPS-r: A Cost-Effective Iterative Switching Algorithm for Input-Queued Switches"
     authors: ["Long Gong", "Jun (Jim) Xu", "Liang Liu", "Siva Theja Maguluri"]
     conference: 13th EAI International Conference on Performance Evaluation Methodologies and Tools
-    url: http://valuetools.org/accepted-papers/
+    type: conference
+    url: https://dl.acm.org/doi/abs/10.1145/3388831.3388836
+    pdf: https://dl.acm.org/doi/pdf/10.1145/3388831.3388836
   - pub5:
     title: "2-Hop Eclipse: A Fast Algorithm for Bandwidth-Efficient Data Center Switching"
     authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
     conference: 2018 International Conference on Cloud Computing (CLOUD 2018)
     url: http://icws.org/2018/resources/SCF2018-AP-0606.pdf
+    type: conference
   - pub4:
     title: "Best First Fit (BFF): An Approach to Partially Reconfigurable Hybrid Circuit and Packet Switching"
     authors: ["Liang Liu", "Long Gong", "Sen Yang", "Jun (Jim) Xu", "Lance Fortnow"]
     conference: IEEE CLOUD 2018
-    url: http://conferences.computer.org/services/2018/assets/files/IEEECongress_techprogram_CHAIRS.pdf
+    type: conference
+    url: https://ieeexplore.ieee.org/document/8457828
+    pdf: https://www.cc.gatech.edu/home/jx/reprints/Liu%20et%20al.%20-%202018%20-%20Best%20First%20Fit%20(BFF)%20An%20Approach%20to%20Partially%20Rec.pdf
   - pub3:
     title: "Queue-Proportional Sampling: A Better Approach to Crossbar Scheduling for Input-Queued Switches"
     authors: ["Long Gong", "Paul Tune", "Liang Liu", "Sen Yang", "Jun (Jim) Xu"]
