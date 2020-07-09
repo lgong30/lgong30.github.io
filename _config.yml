@@ -110,6 +110,9 @@ education:
     description: ""
 
 news:
+  - summary: Thesis got approved
+    time: July 8, 2020
+    content: Long's thesis has been approved
   - summary: Paper Got Major Revision
     time: May 15, 2020
     content: Our recent paper on set difference got MAJOR REVISION feedback from <a href="https://vldb2021.org/" target="_blank">VLDB 2021</a>. Hope we can evetually get it in!
