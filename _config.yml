@@ -110,6 +110,9 @@ education:
     description: ""
 
 news:
+  - summary: Paper Got Accepted
+    time: July 20, 2020
+    content: Our recent paper on switching got accepted by <a href="https://www.performance2020.deib.polimi.it/" target="_blank">38th International Symposium on Computer Performance, Modeling, Measurements and Evaluation 2020</a> as a short paper.
   - summary: Thesis got approved
     time: July 8, 2020
     content: Long's thesis has been approved
