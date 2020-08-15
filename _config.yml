@@ -187,6 +187,12 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub9:
+    title: "Sliding-Window QPS (SW-QPS): A Perfect Parallel Iterative Switching Algorithm for Input-Queued Switches"
+    authors: ["Jingfan Meng", "Long Gong", "Jun Xu"]
+    conference: 38th International Symposium on Computer Performance, Modeling, Measurements and Evaluation 2020 (short paper)
+    type: conference
+    url: https://www.performance2020.deib.polimi.it/accepted-papers/
   - pub8:
     title: "iDEC: Indexable Distance Estimating Codes for Approximate Nearest Neighbor Search"
     authors: ["Long Gong", "Huayi Wang", "Mitsunori Ogihara", "Jun Xu"]
