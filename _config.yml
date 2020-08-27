@@ -54,13 +54,13 @@ research_interests:
   - GPUs
   - set reconciliation
   - approximate nearest neighbor search on massive datasets
-  - scheduling for crossbar switches
-  - switching in data center networks
-  - data streaming
-  - software defined networking
-  - network function virtualization
-  - programmable switch
-  - scheduling in wireless networks
+#  - scheduling for crossbar switches
+#  - switching in data center networks
+#  - data streaming
+#  - software defined networking
+#  - network function virtualization
+#  - programmable switch
+#  - scheduling in wireless networks
   - network systems
   
 
