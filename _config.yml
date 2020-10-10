@@ -110,6 +110,12 @@ education:
     description: ""
 
 news:
+  - summary: Planned to Update This Website
+    time: October 10, 2020
+    content: 1. Update template to better support ultra-wide screens. <br/> 2. Merge in <a href="http://xlong88.github.io/">my personal blog</a>. <br/> 3. Deprecate some un-used files. <br/> 4. Remove some too-old information.
+  - summary: Paper Got Accepted
+    time: October 10, 2020
+    content: Our Our recent paper on set difference got accepted by <a href="https://vldb2021.org/" target="_blank">VLDB 2021</a>.
   - summary: Paper Got Accepted
     time: July 20, 2020
     content: Our recent paper on switching got accepted by <a href="https://www.performance2020.deib.polimi.it/" target="_blank">38th International Symposium on Computer Performance, Modeling, Measurements and Evaluation 2020</a> as a short paper.
