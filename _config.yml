@@ -195,7 +195,7 @@ news:
 publications:
   - pub10:
     title: "Crossbar scheduling algorithms for input-queued switches"
-    type: other
+    type: journal
     authors: ["Long Gong"]
     journal: PhD Thesis, Georgia Institute of technology, August 2020
     slides: long_defense.pptx
