@@ -193,6 +193,14 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub10:
+    title: "Crossbar scheduling algorithms for input-queued switches"
+    type: other
+    authors: ["Long Gong"]
+    journal: PhD Thesis, Georgia Institute of technology, August 2020
+    slides: long_defense.pptx
+    pdf: https://smartech.gatech.edu/bitstream/handle/1853/63632/GONG-DISSERTATION-2020.pdf?sequence=1&isAllowed=y
+    url: https://smartech.gatech.edu/handle/1853/63632
   - pub9:
     title: "Sliding-Window QPS (SW-QPS): A Perfect Parallel Iterative Switching Algorithm for Input-Queued Switches"
     authors: ["Jingfan Meng", "Long Gong", "Jun Xu"]
@@ -204,6 +212,7 @@ publications:
     authors: ["Long Gong", "Huayi Wang", "Mitsunori Ogihara", "Jun Xu"]
     conference: International Conference on Very Large Data Bases (VLDB) 2020
     type: conference
+    slides: long_idec.pptx
     pdf: http://www.vldb.org/pvldb/vol13/p1483-gong.pdf
   - pub7:
     title: "SERENADE: A Parallel Iterative Algorithm for Crossbar Scheduling in Input-Queued Switches"
@@ -211,6 +220,7 @@ publications:
     conference: The 2020 IEEE 21st International Conference on High-Performance Switching and Routing (HPSR 2020)
     type: conference
     url: https://ieeexplore.ieee.org/document/9098995
+    slides: long_serenade.pptx
   - pub6:
     title: "QPS-r: A Cost-Effective Iterative Switching Algorithm for Input-Queued Switches"
     authors: ["Long Gong", "Jun (Jim) Xu", "Liang Liu", "Siva Theja Maguluri"]

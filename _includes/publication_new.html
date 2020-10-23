@@ -29,11 +29,12 @@
         {{ pubinfo.journal }} {% else %} <i class="fa fa-users"></i>
         {{ pubinfo.conference }} {% endif %} | {% if pubinfo.pdf %}
         <a href="{{ pubinfo.pdf }}" target="_blank"
-          ><i class="fa fa-file-pdf-o"> PDF</i></a
+          ><i class="fa fa-file-pdf-o"></i></a
         >
-        {% endif %} | {% if pubinfo.url %}
+        {% endif %}  | {% if pubinfo.slides %}
+        <a href=""{{ site.url }}assets/files/{{ pubinfo.slides }}" target=""_blank"><i class="fa fa-file-powerpoint-o" aria-hidden="true"></i></a>{% endif %}} | {% if pubinfo.url %}
         <a href="{{ pubinfo.url }}" target="_blank"
-          ><i class="fa fa-gg"> More Info</i></a
+        ><i class="fa fa-gg"> More Info</i></a
         >
         {% endif %}
       </div>
