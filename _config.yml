@@ -193,6 +193,12 @@ news:
     content: "\"Discover\" <a href=\"https://www.youtube.com/watch?v=rYW7kQRyUvA\">a very useful tutorial on Open vSwitch</a> on YouTuBe, which shows how to connect two VMs through OVS bridge"
 
 publications:
+  - pub11:
+    title: "Space- and Computationally-Efficient Set Reconciliation via Parity Bitmap Sketch (PBS)"
+    authors: ["Long Gong", "Ziheng Liu", "Liang Liu", "Jun Xu", "Mitsunori Ogihara", "Tong Yang"]
+    conference: International Conference on Very Large Data Bases (VLDB) 2021
+    type: conference
+    pdf: http://vldb.org/pvldb/vol14/p458-gong.pdf
   - pub10:
     title: "Crossbar scheduling algorithms for input-queued switches"
     type: journal
