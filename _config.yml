@@ -110,6 +110,9 @@ education:
     description: ""
 
 news:
+  - summary: Selected source code added
+    time: June 6, 2021
+    content: Sourcde codes added for all DB papers, i.e., iDEC and PBS
   - summary: Planned to Update This Website
     time: October 10, 2020
     content: 1. Update template to better support ultra-wide screens. <br/> 2. Merge in <a href="http://xlong88.github.io/">my personal blog</a>. <br/> 3. Deprecate some un-used files. <br/> 4. Remove some too-old information.
@@ -199,6 +202,7 @@ publications:
     conference: International Conference on Very Large Data Bases (VLDB) 2021
     type: conference
     pdf: http://vldb.org/pvldb/vol14/p458-gong.pdf
+    source_code: https://github.com/Libero0809/pbs_organized
   - pub10:
     title: "Crossbar scheduling algorithms for input-queued switches"
     type: journal
@@ -220,6 +224,7 @@ publications:
     type: conference
     slides: long_idec.pptx
     pdf: http://www.vldb.org/pvldb/vol13/p1483-gong.pdf
+    source_code: https://github.com/Why1221/iDEC
   - pub7:
     title: "SERENADE: A Parallel Iterative Algorithm for Crossbar Scheduling in Input-Queued Switches"
     authors: ["Long Gong", "Liang Liu", "Sen Yang", "Jun (Jim) Xu", "Yi Xie", "Xinbing Wang"]
